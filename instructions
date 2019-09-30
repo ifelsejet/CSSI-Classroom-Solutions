@@ -1,0 +1,38 @@
+Problem 1 - Going Away Cards
+It's sad to say goodbye, but we'll treasure the memories of CSSI forever. In order to give everyone a keepsake from the program, we want to give each participant a card with the signatures of all the other participants.
+
+Keeping track of who signed what is hard, and no matter how much we like each other, it's still a pain to sign so many cards. Instead, let's write a program to sign the cards for us!
+
+Thankfully, at each CSSI site, we have a list of all the names of participants. You want to write a card for each of the names in the list.
+We want to sign everyone's name on each of the cards - but we don't want anyone to sign their own cards. Write a function everyoneSign() that takes in an array of names, and returns a HashMap of messages.
+
+Submission Instructions
+Your file should contain at least one function named:
+
+everyoneSign()
+
+which must take exactly one input argument (the array of names), and must return the HashMap of messages, where the key is the name of the recipient and the value is the message.
+
+Example
+
+For input:
+["See-Mong Tan",
+"Stephen Pratt",
+"Matthew Levine",
+"Eric Breck",
+"Riccardo Crepaldi"]
+
+Your result should be a HashMap looking like this:
+{
+ "See-Mong Tan":"Thank You! Your friends, Stephen Pratt, Matthew Levine, Eric Breck, Riccardo Crepaldi",
+ "Stephen Pratt":"Thank You! Your friends, See-Mong Tan, Matthew Levine, Eric Breck, Riccardo Crepaldi",
+ "Matthew Levine":"Thank You! Your friends, See-Mong Tan, Stephen Pratt, Eric Breck, Riccardo Crepaldi",
+ "Eric Breck":"Thank You! Your friends, See-Mong Tan, Stephen Pratt, Matthew Levine, Riccardo Crepaldi",
+ "Riccardo Crepaldi":"Thank You! Your friends, See-Mong Tan, Stephen Pratt, Matthew Levine, Eric Breck"
+}
+
+Testing Your Code
+To test your code, click the arrow next to the run button and select 'run tests'. This will show you which tests passed and which tests failed. Each test has an explanation of why it failed - click 'more info' to see more details.
+
+Submitting Your Code
+When you are ready to submit your code, click the green 'submit' button!
